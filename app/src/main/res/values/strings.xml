@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">ReminDEER</string>
+    <string name="add_button">GO OUT</string>
+    <string name="delete_button">STAY HOME</string>
+    <string name="scheduled">YOU SHOULD (NOT) REMEMBER ABOUT:</string>
+    <string name="backpack">BACKPACK</string>
+    <string name="jacket">JACKET</string>
+    <string name="keys">KEYS</string>
+    <string name="wallet">WALLET</string>
+    <string name="other">OTHERS</string>
+    <string name="choose">WHAT CAN I REMEMBER FOR YOU?</string>
+    <string name="chooseDateAndTime">TAP TO PICK DATE AND TIME</string>
+    <string name="rememberDateFrom">REMIND FROM:</string>
+    <string name="rememberDateTo">REMIND TO:</string>
+    <string name="noReminders">YOU\'VE GOT NO REMINDEERS</string>
+    <string name="dontYou">DON\'T YOU NEED ME ANYMORE?</string>
+    <string name="typeOfWork">REMIND TYPE:</string>
+    <string name="dateOfWorking">TIME INTERVAL:</string>
+    <string name="dateOfMade">CREATION DATE:</string>
+    <string name="localization">LOCATION:</string>
+    <string name="clickToGetLocalization">TAP TO GET LOCATION</string>
+    <string name="reminderAddLocation">PLACE OF CREATION:</string>
+    <string name="beacon">REMINDEER BEACON:</string>
+    <string name="clickToChooseBeacon">TAP TO GET BEACON</string>
+    <string name="nameHint">NAME</string>
+    <string name="yourCurrentLocation">YOUR CURRENT LOCATION:</string>
+    <string name="beaconAlert">BEACON:</string>
+    <string name="alertTitle">OH MY DEER…</string>
+    <string name="alertMessage">YOU\'VE JUST FORGOTTEN ABOUT…</string>
+    <string name="beaconNameHint">Beacon Name</string>
+    <string name="defaultUUID">Default UUID</string>
+    <string name="setDefaultUUID">Set as default UUID</string>
+    <string name="UUIDHint">UUID</string>
+    <string name="MajorNumberHint">Major Number</string>
+    <string name="MinorNumberHint">Minor Number</string>
+    <string name="NoBeacon">There\'s no beacon in range</string>
+</resources>

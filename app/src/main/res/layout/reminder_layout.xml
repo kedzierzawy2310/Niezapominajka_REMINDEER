@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reminderLinearLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="1dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="0dp"
+    android:background="@drawable/button_design_vol_2"
+    tools:ignore="ContentDescription">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/reminderCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_weight="0"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/reminderImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/reminderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="#272759"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/reminderImage"
+                tools:ignore="RelativeOverlap" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="18dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/reminderDetailsCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/typeOfWork"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="8dp">
+                <TextView
+                    android:id="@+id/typeOfWorkTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#272759"
+                    android:textAlignment="center"
+                    android:text="@string/typeOfWork"
+                    android:textSize="8sp"
+                    android:layout_centerVertical="true"
+                    tools:ignore="SmallSp" />
+                <TextView
+                    android:id="@+id/typeOfWorkInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="96dp"
+                    android:textColor="#272759"
+                    android:textAlignment="center"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/assignedBeacon"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="8dp">
+                <TextView
+                    android:id="@+id/assignedBeaconTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#272759"
+                    android:textAlignment="center"
+                    android:text="@string/beaconAlert"
+                    android:textSize="8sp"
+                    android:layout_centerVertical="true"
+                    tools:ignore="SmallSp" />
+                <TextView
+                    android:id="@+id/assignedBeaconInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="96dp"
+                    android:textColor="#272759"
+                    android:textAlignment="center"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/dateOfWorking"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="8dp">
+                <TextView
+                    android:id="@+id/dateOfWorkingTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#272759"
+                    android:textAlignment="center"
+                    android:text="@string/dateOfWorking"
+                    android:textSize="8sp"
+                    android:layout_centerVertical="true"
+                    tools:ignore="SmallSp" />
+                <TextView
+                    android:id="@+id/dateOfWorkingInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="96dp"
+                    android:textColor="#272759"
+                    android:textAlignment="center"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/dateOfMade"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="8dp">
+                <TextView
+                    android:id="@+id/dateOfMadeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#272759"
+                    android:textAlignment="center"
+                    android:text="@string/dateOfMade"
+                    android:textSize="8sp"
+                    android:layout_centerVertical="true"
+                    tools:ignore="SmallSp" />
+                <TextView
+                    android:id="@+id/dateOfMadeInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="96dp"
+                    android:textColor="#272759"
+                    android:textAlignment="center"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/addLocation"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="8dp">
+                <TextView
+                    android:id="@+id/addLocationTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#272759"
+                    android:textAlignment="center"
+                    android:text="@string/reminderAddLocation"
+                    android:textSize="8sp"
+                    android:layout_centerVertical="true"
+                    tools:ignore="SmallSp" />
+                <TextView
+                    android:id="@+id/addLocationInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="96dp"
+                    android:textColor="#272759"
+                    android:textAlignment="center"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp" />
+
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/showPhotoButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#272759"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/button_design_vol_2"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
